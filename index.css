@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at top, #111 0%, #050505 40%, #080808 100%);
+  color: #f5f7ff;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(120, 170, 255, 0.08), transparent 45%),
+    radial-gradient(circle at top right, rgba(182, 64, 255, 0.1), transparent 15%);
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+span,li,
+button {
+  text-shadow: 0 0 16px rgba(118, 182, 255, 0.24), 0 0 32px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3 {
+  color: #e9f1ff;
+}
+
+a {
+  color: #79b7ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 0 0 28px rgba(121, 183, 255, 0.7);
+}
+
+.glow {
+  color: #d6e9ff;
+  text-shadow: 0 0 18px rgba(138, 182, 255, 0.9), 0 0 28px rgba(156, 202, 255, 0.4);
+}
+
+.container {
+  padding: 3rem;
+  width: min(100%, 1000px);
+}
+
+section {
+  margin: 1.5rem auto;
+}
+
+button {
+  border: 1px solid rgba(121, 183, 255, 0.4);
+  background: rgba(15, 25, 45, 0.8);
+  color: #e8f2ff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(121, 183, 255, 0.18);
+}
+
+button:hover {
+  background: rgba(22, 34, 62, 0.95);
+}
